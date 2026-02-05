@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const steder = [
     {
         "location":"lolland",
-        "tekst":"Nakskov er en af mine favoritsteder i Danmark, da det er her jeg er vokset op og hvor største delen af min familie bor."
+        "tekst":"Nakskov er en af mine favoritsteder i Danmark, da det er her jeg er vokset op og hvor størstedelen af min familie bor."
     },
     {
       "location":"randers",
