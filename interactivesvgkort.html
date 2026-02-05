@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Untitled Document</title>
+    <script type="text/javascript" src="interactivesvg.js"></script>
+  </head>
+  <style>
+    #info {
+      width: 50vw;
+      min-width: 200px;
+      font-size: 1.5rem;
+      transform: translate(-20px);
+      animation: draw 0.5s ease-out forwards;
+      background-color: beige;
+    }
+
+    circle:hover {
+      cursor: pointer;
+      fill: #f31fd0ff;
+    }
+
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      height: auto;
+    }
+    ::backdrop {
+      backdrop-filter: blur(5px);
+    }
+    @keyframes draw {
+      to {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+  </style>
+
+  <body>
+    <section>
+      <h1>Kort over mine yndlingssteder i Danmark</h1>
+      <h2>Velkommen til mine yndlingssteder. Klik på en prik for at lære mere om dem.</h2>
+
+      <div id="map"></div>
+      <article id="info" popover>
+        <p id="tekst"></p>
+      </article>
+    </section>
+  </body>
+</html>
